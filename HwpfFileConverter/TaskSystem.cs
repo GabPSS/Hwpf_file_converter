@@ -419,7 +419,8 @@ namespace HomeworkPlanner
         }
 
         // updated method that required properties and resources
-        public Image GetIcon() => throw new NotImplementedException();
+        // public Image GetIcon() => throw new NotImplementedException();
+        // NOTE: Removed for multiplatform compatibility
 
         public TaskStatus GetStatus()
         {
@@ -455,7 +456,7 @@ namespace HomeworkPlanner
         {
             SubjectID = subjectID;
             SubjectName = subjectName;
-            SubjectColor = Color.White.ToArgb();
+            SubjectColor = 16777215;
         }
 
         public override string ToString()
